@@ -1,0 +1,79 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AvaloniaApplication2.MainWindow"
+        Title="Scout Data Agent"
+        WindowState="Maximized"
+		Background="#FFFDEBD0">
+	<StackPanel Margin="20">
+		<Border Background="BlueViolet" Padding="10" CornerRadius="5" Margin="0,0,0,20">
+			<TextBlock Text="SCOUT DATA AGENT "
+					   FontSize="35"
+					   FontWeight="Bold"
+					   Foreground="White"
+					   HorizontalAlignment="Center"
+					   VerticalAlignment="Center"/>
+		</Border>
+		<Border>
+			<Border.Background>
+				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+					<GradientStop Color="#f77062" Offset="0.0"/>
+					<GradientStop Color="#fe5196" Offset="1.0"/>
+				</LinearGradientBrush>
+			</Border.Background>
+			<TextBlock Text="System Resources "
+					   FontSize="26"
+					   FontStyle="Italic"
+					   FontWeight="SemiBold"
+					   Foreground="Black"
+					   HorizontalAlignment="Center"/>
+		</Border>
+
+
+		<TextBlock Text="CPU Usage" Margin="0,20,0,5"/>
+		<ProgressBar Name="CpuProgress" Minimum="0" Maximum="100" Height="20"/>
+		<TextBlock Name="CpuLabel" HorizontalAlignment="Center"/>
+
+		<TextBlock Text="RAM Usage" Margin="0,20,0,5"/>
+		<ProgressBar Name="RamProgress" Minimum="0" Maximum="100" Height="20"/>
+		<TextBlock Name="RamLabel" HorizontalAlignment="Center"/>
+
+		<TextBlock Text="Disk Usage" Margin="0,20,0,5"/>
+		<ProgressBar Name="DiskProgress" Minimum="0" Maximum="100" Height="20"/>
+		<TextBlock Name="DiskLabel" HorizontalAlignment="Center"/>
+		<TextBlock Text=" " Height="50"/>
+		<Border>
+			<Border.Background>
+				<LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+					<GradientStop Color="#f77062" Offset="0.0"/>
+					<GradientStop Color="#fe5196" Offset="1.0"/>
+				</LinearGradientBrush>
+			</Border.Background>
+			<TextBlock Text="Plugin Services "
+					   FontSize="26"
+					   FontStyle="Italic"
+					   FontWeight="SemiBold"
+					   Foreground="Black"
+					   HorizontalAlignment="Center"/>
+		</Border>
+		<TextBlock x:Name="StatusText" HorizontalAlignment="Center" Margin="5" FontWeight="Bold" Foreground="DarkGreen"/>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+			<Border BorderBrush="Gray" BorderThickness="2" CornerRadius="8" Padding="10" Margin="10" Width="300">
+				<StackPanel>
+					<TextBlock Text="Metrics Logger" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+					<CheckBox x:Name="MetricsLoggerCheckBox" Content="Enable Metrics Logger" FontSize="16"/>
+					<TextBlock Text="Please tick to log metrics" FontSize="12" Foreground="Gray" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Border>
+
+			<Border BorderBrush="Gray" BorderThickness="2" CornerRadius="8" Padding="10" Margin="10" Width="300">
+				<StackPanel>
+					<TextBlock Text="API Logger" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+					<CheckBox x:Name="ApiCheckBox" Content="Enable API Logger" FontSize="16"/>
+					<TextBlock Text="Please tick to post metrics to API" FontSize="12" Foreground="Gray" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+				</StackPanel>
+			</Border>
+		</StackPanel>
+	
+	</StackPanel>
+	
+</Window>
