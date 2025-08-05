@@ -11,16 +11,16 @@ Responsive checkbox system — you can enable/disable plugins anytime during app
 Simple, visually appealing interface with clearly labeled controls and status messages.
 
 # Directory and File Structure
-├── AvaloniaApplication2/    
+├── AvaloniaApplication2    
 │   ├── Dependencies
-│   ├── Interfaces/                
+│   ├── Interfaces               
 │   │   ├── IMonitorPlugin.cs    
-│   ├── Plugins/                 
+│   ├── Plugins                 
 │   │   ├── FileLoggerPlugin.cs    
 │   │   └── ApiPostPlugin.cs        
-│   ├── App.axaml/                  
+│   ├── App.axaml                
 │   │   └──App.axaml.cs
-│   ├── Mainwindow.axamal/                
+│   ├── Mainwindow.axamal               
 │   │    └── Mainwindow.axamal.cs    
 │   │         └── Mainwindow       
 │   ├── PluginSettings.json   
