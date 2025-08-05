@@ -1,1 +1,1 @@
-# AvaloniaApplication2
+# Scout Data Agent – System Resource Monitor App
